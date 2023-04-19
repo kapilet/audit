@@ -52,6 +52,7 @@ body {
 }
 
 .sidebar .nav-link {
+  position: relative;
   font-weight: 500;
   color: #333;
 }
@@ -146,4 +147,34 @@ body {
 }
 .square-grid {
   background: url(../image/square-grid.png) repeat;
+}
+/*
+Menu
+*/
+.sidebar #menu li.active> a, .sidebar #menu li> a:hover {
+  color: #2470dc;
+}
+.sidebar  #menu>li>a>.icon-arrow:after{
+  position: absolute;
+  font-family: 'simple-line-icons';
+  content: "\e606";
+  right: 5px;
+  top: 16px;
+  font-size: 12px;
+}
+.sidebar  #menu>li.active>a>.icon-arrow:after{
+  transform: rotate(90deg);
+}
+.sidebar  #menu>li ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sidebar  #menu>li ul li a{
+  display: block;
+  padding: 5px;
+  padding-left: 30px;
+  text-decoration: none;
+  color: #000000;
+  font-size: 1rem;
 }

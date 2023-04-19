@@ -10,9 +10,9 @@
   <meta name="author" content="">
   <meta name="generator" content="Hugo 0.111.3">
   <title>Contract Audit Report</title>
-  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/dashboard/">
+  <link rel="canonical" href="">
 
-
+  <link href="fonts/lineicons/css/simple-line-icons.css" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
@@ -33,17 +33,11 @@
         <a href="#" class="side-logo"></a>
         <div class="position-sticky pt-3 sidebar-sticky">
           <ul class="nav flex-column" id="menu">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="#">
                 <span data-feather="home" class="align-text-bottom"></span>
                 Disclaimer
               </a>
-              <ul>
-                <li><a href="#">item 0.1</a></li>
-                <li><a href="#">item 0.2</a></li>
-                <li><a href="#">item 0.3</a></li>
-                <li><a href="#">item 0.4</a></li>
-              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
@@ -54,16 +48,23 @@
             <li class="nav-item">
               <a class="nav-link" href="#">
                 <span data-feather="file" class="align-text-bottom"></span>
-                Version Info
+                Version Info                
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
                 <span data-feather="file" class="align-text-bottom"></span>
                 Overview
+                <span class="icon-arrow"></span>
               </a>
+              <ul>
+                <li><a href="#">Background</a></li>
+                <li><a href="#">Project Dates</a></li>
+                <li><a href="#">item 0.3</a></li>
+                <li><a href="#">Review Team</a></li>
+              </ul>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#">
                 <span data-feather="file" class="align-text-bottom"></span>
                 Background
@@ -80,14 +81,33 @@
                 <span data-feather="file" class="align-text-bottom"></span>
                 Review Team
               </a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="#">
                 <span data-feather="file" class="align-text-bottom"></span>
                 Introduction
+                <span class="icon-arrow"></span>
               </a>
+              <ul>
+                <li><a href="#">Manual audit</a></li>
+                <li><a href="#">Automated analysis</a></li>
+                <li>
+                  <a href="#">Report</a>
+                  <span class="icon-arrow"></span>
+                  </a>
+                  <ul>
+                    <li><a href="#">Audit details</a></li>
+                    <li><a href="#">Audit Goals</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Sound architecture</a></li>
+                    <li><a href="#">Code correctness and quality</a></li>
+                    <li><a href="#">Test Methods</a></li>
+                    <li><a href="#">Issue check list</a></li>
+                  </ul>
+                </li>
+              </ul>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#">
                 <span data-feather="file" class="align-text-bottom"></span>
                 Manual audit
@@ -146,26 +166,46 @@
                 <span data-feather="file" class="align-text-bottom"></span>
                 Issue check list
               </a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="#">
                 <span data-feather="file" class="align-text-bottom"></span>
                 Findings
+                <span class="icon-arrow"></span>
               </a>
+              <ul>
+                <li><a href="#">Summary</a></li>
+              </ul>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#">
                 <span data-feather="file" class="align-text-bottom"></span>
                 Summary
               </a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="#">
                 <span data-feather="file" class="align-text-bottom"></span>
                 Overall Detailed Results
+                <span class="icon-arrow"></span>
               </a>
+              <ul>
+                <li><a href="#">Tasks</a></li>
+                <li><a href="#">Issues</a></li>
+                <li><a href="#">Checks</a></li>
+                <li><a href="#">Notes</a></li>
+                <li><a href="#">Estimates</a></li>
+                <li><a href="#">Project Decisions</a></li>
+                <li>
+                  <a href="#">Tool Results<span class="icon-arrow"></span></a>
+                  <ul>
+                    <li><a href="#">MythX (2 “level low” issues detected)</a></li>
+                    <li><a href="#">Slither</a></li>
+                  </ul>
+                </li>
+              </ul>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#">
                 <span data-feather="file" class="align-text-bottom"></span>
                 1.	Tasks
@@ -206,8 +246,8 @@
                 <span data-feather="file" class="align-text-bottom"></span>
                 7.	Tool Results
               </a>
-            </li>
-            <li class="nav-item">
+            </li> -->
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#">
                 <span data-feather="file" class="align-text-bottom"></span>
                 •	MythX (2 “level low” issues detected)
@@ -218,7 +258,7 @@
                 <span data-feather="file" class="align-text-bottom"></span>
                 •	Slither
               </a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="#">
                 <span data-feather="file" class="align-text-bottom"></span>
@@ -229,12 +269,6 @@
               <a class="nav-link" href="#">
                 <span data-feather="file" class="align-text-bottom"></span>
                 About blockchainone
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="file" class="align-text-bottom"></span>
-                
               </a>
             </li>
             <li class="nav-item">
@@ -495,23 +529,23 @@
               </thead>
               <tbody>
                 <tr>
-                  <td class="table-danger text-danger fw-bold">Critical</td>
+                  <td class="table-danger text-danger fw-bold align-middle">Critical</td>
                   <td>Critical severity vulnerabilities will have a significant effect on the security of the DeFi project, and it is strongly recommended to fix the critical vulnerabilities.</td>
                 </tr>
                 <tr>
-                  <td class="table-warning text-warning fw-bold">High</td>
+                  <td class="table-warning text-warning fw-bold align-middle">High</td>
                   <td>High severity vulnerabilities will affect the normal operation of the DeFi project. It is strongly recommended to fix high-risk vulnerabilities.</td>
                 </tr>
                 <tr>
-                  <td class="table-primary text-primary fw-bold">Medium</td>
+                  <td class="table-primary text-primary fw-bold align-middle">Medium</td>
                   <td>Medium severity vulnerability will affect the operation of the DeFi project. It is recommended to fix medium-risk vulnerabilities.</td>
                 </tr>
                 <tr>
-                  <td class="table-success text-success fw-bold">Low</td>
+                  <td class="table-success text-success fw-bold align-middle">Low</td>
                   <td>Low severity vulnerabilities may affect the operation of the DeFi project in certain scenarios. It is suggested that the project party should evaluate and consider whether these vulnerabilities need to be fixed.</td>
                 </tr>
                 <tr>
-                  <td class="table-secondary text-secondary fw-bold">Weakness</td>
+                  <td class="table-secondary text-secondary fw-bold align-middle">Weakness</td>
                   <td>There are safety risks theoretically, but it is extremely difficult to reproduce in engineering.</td>
                 </tr>
               </tbody>            
