@@ -32,18 +32,18 @@
       <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-body-tertiary sidebar collapse">
         <a href="#" class="side-logo"></a>
         <div class="position-sticky pt-3 sidebar-sticky">
-          <ul class="nav flex-column">
+          <ul class="nav flex-column" id="menu">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">
                 <span data-feather="home" class="align-text-bottom"></span>
                 Disclaimer
               </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="file" class="align-text-bottom"></span>
-                
-              </a>
+              <ul>
+                <li><a href="#">item 0.1</a></li>
+                <li><a href="#">item 0.2</a></li>
+                <li><a href="#">item 0.3</a></li>
+                <li><a href="#">item 0.4</a></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
@@ -1055,10 +1055,21 @@
       </main>
     </div>
   </div>
-
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"></script>
+  <script src="js/metisMenu.min.js"></script> 
+  <script>
+      $(function () {
+
+          $('#menu').metisMenu();
+
+          $('#menu2').metisMenu({
+              toggle: false
+          });
+      });
+  </script>
 </body>
 
 </html>
