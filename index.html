@@ -30,6 +30,7 @@
   <div class="container-fluid">
     <div class="row">
       <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-body-tertiary sidebar collapse">
+        <a href="#" class="side-logo"></a>
         <div class="position-sticky pt-3 sidebar-sticky">
           <ul class="nav flex-column">
             <li class="nav-item">
@@ -287,7 +288,7 @@
         <section class="home-page d-flex flex-column justify-content-center">
           <div class="section-overlay min-vh-100 d-flex align-items-center justify-content-center py-4 py-md-4 py-lg-5">
             <div class="card border-0 text-center mx-15 mx-lg-0 bg-white-90" style="max-width: 770px">
-              <div class="card-body text-body p-10 p-lg-22">
+              <div class="card-body text-body px-md-5 px-sm-1 py-3">
                 <div class="main_logo my-3"><img src="image/logo.png" alt=""></div>
                 <h1 class="text-black fw-bold fs-1 fs-md-3 fs-lg-4 mb-10">Smart Contract Audit Report</h1>
                 <h3>Smart Contract Review</h3>
@@ -299,14 +300,14 @@
             </div>
           </div>
         </section>
-        <section class="">
+        <section class="bg-light">
           <div class="section-padded w-50 w-md-100 text-center mx-auto">
-            <h1 class="text-black fw-bold fs-1 fs-md-3 fs-lg-4 mb-3">Disclaimer</h1>
+            <h1 class="text-black fw-bold fs-2 fs-md-3 fs-lg-4 mb-3">Disclaimer</h1>
             <p>blockchainone retains the right to display audit reports and other content elements based on the work in their portfolio and as content features in other projects with protecting all security purpose of customer. The report containing confidential information can be used internally by the Customer, or it can be disclosed publicly after all vulnerabilities fixed- upon a decision of the Customer.</p>
           </div>
         </section>
-        <section class="bg-light">
-          <div class="section-padded mx-5">
+        <section class="">
+          <div class="section-padded px-sm-2 px-lg-5">
             <h2 class="text-black fw-bold fs-4 fs-md-3 fs-lg-4 mb-4">Report Summary</h2>
             <table class="table table-striped table-borderless mb-5">
               <tr>
@@ -391,16 +392,17 @@
         </section>
         <section class="overview text-light">
           <div class="section-overlay px-5">
-            <h1 class="fw-bold fs-1 fs-md-3 fs-lg-4 mb-3">Overview</h1>
-            <h2 class="fw-bold fs-4 fs-md-3 fs-lg-4 mb-4">Background</h2>
+            <h1 class="fw-bold fs-2 fs-md-3 fs-lg-4 mb-3">Overview</h1>
+            <hr>
+            <h2 class="fw-bold fs-4 fs-md-3 fs-lg-4 mb-2">Background</h2>
             <p>Platform Factory Pvt Ltd requested that blockchainone can perform an extensive audit of their Smart Contracts.</p>
-            <h2 class="fw-bold fs-4 fs-md-3 fs-lg-4 mb-4">Project Dates</h2>
+            <h2 class="fw-bold fs-4 fs-md-3 fs-lg-4 mb-2">Project Dates</h2>
             <p>The following is the project schedule for this review and report:</p>
             <ul>
               <li>April 11: Smart Contract Review Completed (Completed)</li>
               <li>April 12: Delivery of Smart Contract Audit Report (Completed)</li>
             </ul>
-            <h2 class="fw-bold fs-4 fs-md-3 fs-lg-4 mb-4">Review Team</h2>
+            <h2 class="fw-bold fs-4 fs-md-3 fs-lg-4 mb-2">Review Team</h2>
             <p>The following blockchainone team member participated in this review:</p>
             <ul>
               <li>Mark, Security Researcher and Engineer</li>
@@ -410,7 +412,7 @@
         </section>
         <section class="">
           <div class="section-padded px-5">
-            <h1 class="fw-bold fs-1 fs-md-3 fs-lg-4 mb-3">Introduction</h1>
+            <h1 class="fw-bold fs-2 fs-md-3 fs-lg-4 mb-3">Introduction</h1>
             <p>Given the opportunity to review blockchainone related smart contract source code, we in the report outline our systematic approach to evaluate potential security issues in the smart contract implementation, expose possible semantic inconsistencies between smart contract code and design document, and provide additional suggestions or recommendations for improvement. Our results show that the given version of smart contracts is ready to launch after resolving the mentioned issues, there are no critical or high or medium severity issues found related to business logic, security or performance.</p>
             <p>Auditing approach and Methodologies applied</p>
             <p>In this audit, we consider the following crucial features of the code.</p>
@@ -420,7 +422,7 @@
               <li>Whether the code meets the best coding practices.</li>
               <li>Whether the code meets the SWC Registry issue.</li>
             </ul>
-            <h2 class="fw-bold fs-4 fs-md-3 fs-lg-4 mb-4">Manual audit</h2>
+            <h2 class="fw-bold fs-4 fs-md-3 fs-lg-4 mb-2">Manual audit</h2>
             <ul>
               <li>Inspecting the code line by line and revert the initial algorithms of the protocol and then compare them with the specification</li>
               <li>Manually analyzing the code for security vulnerabilities.</li>
@@ -431,7 +433,7 @@
               <li>Analysis of security on-chain data.</li>
               <li>Analysis of the failure preparations to check how the smart contract performs in case of bugs and vulnerability.</li>
             </ul>
-            <h2 class="fw-bold fs-4 fs-md-3 fs-lg-4 mb-4">Automated analysis</h2>
+            <h2 class="fw-bold fs-4 fs-md-3 fs-lg-4 mb-2">Automated analysis</h2>
             <ul>
               <li>Scanning the project's code base with Mythril, Slither, Echidna , Manticore other's.</li>
               <li>Manually verifying (reject or confirm) all the issues found by tools.</li>
@@ -439,11 +441,11 @@
               <li>Manual Security Testing (SWC-Registry, Overflow)</li>
               <li>Running the tests and checking their coverage.</li>
             </ul>
-            <h2 class="fw-bold fs-4 fs-md-3 fs-lg-4 mb-4">Report</h2>
+            <h2 class="fw-bold fs-4 fs-md-3 fs-lg-4 mb-2">Report</h2>
             <ul>
               <li>All the gathered information is described in this report.</li>
             </ul>
-            <h2 class="fw-bold fs-4 fs-md-3 fs-lg-4 mb-4">Audit details</h2>
+            <h2 class="fw-bold fs-4 fs-md-3 fs-lg-4 mb-2">Audit details</h2>
             <ul>
               <li>Project Name: Amplify Protocol</li>
               <li>Token symbol: AMPT</li>
@@ -451,41 +453,44 @@
               <li>Language: Solidity</li>
               <li>Platform and tools: Remix, VScode, security and other tools mentioned in the automated analysis section.</li>
             </ul>
-            <h2 class="fw-bold fs-4 fs-md-3 fs-lg-4 mb-4">Audit Goals</h2>
+            <h2 class="fw-bold fs-4 fs-md-3 fs-lg-4 mb-2">Audit Goals</h2>
             <p>The focus of this audit was to verify whether the smart contract is secure, resilient, and working properly according to the specs. The audit activity can be grouped in three categories.</p>
-            <h2 class="fw-bold fs-4 fs-md-3 fs-lg-4 mb-4">Security</h2>
+            <h2 class="fw-bold fs-4 fs-md-3 fs-lg-4 mb-2">Security</h2>
             <p>Identifying the security-related issue within each contract and system of contracts. Every issue in this report was assigned a severity level such as critical, high and low etc.</p>
-            <h4>Vulnerability Severity Classification</h4>
-            <table class="table">
-              <tr>
-                <td>High</td>
-                <td>Critical</td>
-                <td>High</td>
-                <td>Medium</td>
+            <p class="fw-bold">Vulnerability Severity Classification</p>
+            <table class="table table-bordered mb-5 fs-6">
+              <tbody><tr>
+                <td class="table-warning text-warning fw-bold">High</td>
+                <td class="table-danger text-danger fw-bold">Critical</td>
+                <td class="table-warning text-warning fw-bold">High</td>
+                <td class="table-primary text-primary fw-bold">Medium</td>
               </tr>
               <tr>
-                <td>Medium</td>
-                <td>High</td>
-                <td>Medium</td>
-                <td>Low</td>
+                <td class="table-primary text-primary fw-bold">Medium</td>
+                <td class="table-warning text-warning fw-bold">High</td>
+                <td class="table-primary text-primary fw-bold">Medium</td>
+                <td class="table-success text-success fw-bold">Low</td>
               </tr>
               <tr>
-                <td>Low</td>
-                <td>Medium</td>
-                <td>Low</td>
-                <td>Low</td>
+                <td class="table-success text-success fw-bold">Low</td>
+                <td class="table-primary text-primary fw-bold">Medium</td>
+                <td class="table-success text-success fw-bold">Low</td>
+                <td class="table-success text-success fw-bold">Low</td>
               </tr>
               <tr>
                 <td></td>
-                <td>High</td>
-                <td>Medium</td>
-                <td>Low</td>
+                <td class="table-warning text-warning fw-bold">High</td>
+                <td class="table-primary text-primary fw-bold">Medium</td>
+                <td class="table-success text-success fw-bold">Low</td>
               </tr>
-            </table>
-            <table class="table">
+            </tbody>
+          </table>
+            <table class="table mb-5">
               <thead>
-                <th>Low</th>
-                <th>Description</th>
+                <tr class="table-dark">
+                  <th>Low</th>
+                  <th>Description</th>
+                </tr>
               </thead>
               <tbody>
                 <tr>
@@ -510,9 +515,9 @@
                 </tr>
               </tbody>            
             </table>
-            <h2 class="fw-bold fs-4 fs-md-3 fs-lg-4 mb-4">Sound architecture</h2>
+            <h2 class="fw-bold fs-4 fs-md-3 fs-lg-4 mb-2">Sound architecture</h2>
             <p>Evaluating the architect of a system through the lens of established smart contract best practice and general software practice.</p>
-            <h2>Code correctness and quality</h2>
+            <h2 class="fw-bold fs-4 fs-md-3 fs-lg-4 mb-2">Code correctness and quality</h2>
             <p>A full review of contract source code. The primary area of focus includes.</p>
             <ul>
               <li>Correctness.</li>
@@ -520,9 +525,9 @@
               <li>Readability.</li>
               <li>Quantity and quality of test coverage.</li>
             </ul>
-            <h2 class="fw-bold fs-4 fs-md-3 fs-lg-4 mb-4">Test Methods</h2>
+            <h2 class="fw-bold fs-4 fs-md-3 fs-lg-4 mb-2">Test Methods</h2>
             <p>The Test Method Information:</p>
-            <table>
+            <table class="table mb-5">
               <thead>
                 <tr>
                   <td>Test method</td>
@@ -544,9 +549,9 @@
                 </tr>
               </tbody>
             </table>
-            <h2>Issue check list</h2>
+            <h2 class="fw-bold fs-4 fs-md-3 fs-lg-4 mb-2">Issue check list</h2>
             <p>The Full List of Check Items:</p>
-            <table class="table">
+            <table class="table mb-5">
               <thead>
                 <tr>
                   <th>Category</th>
@@ -616,12 +621,12 @@
                 </tr>
               </tbody>
             </table>
-            <h2 class="fw-bold fs-4 fs-md-3 fs-lg-4 mb-4">Findings</h2>
+            <h2 class="fw-bold fs-4 fs-md-3 fs-lg-4 mb-2">Findings</h2>
             <h4 class="fw-bold fs-6 mb-4">Summary</h4>
             <p>Here is a summary of our findings after analyzing the blockchainone Smart Contract Review.</p>
             <p>During the first phase of our audit, we studied the smart contract source code and ran code analyzer through specific tools. The purpose here is to statically identify known coding bugs, and then manually verify (reject or confirm) issues reported by tool. We further manually review business logics, examine system operations, and place token management aspects under scrutiny to uncover possible pitfalls and/or bugs.</p>
             <p>The details on the total number of issues with color coding:</p>
-            <table class="table">
+            <table class="table mb-5">
               <thead>
                 <tr>
                   <th>Severity</th>
@@ -667,249 +672,321 @@
         </section>
         <section>
           <div class="section-padded px-5">
-            <h1 class="fw-bold fs-1 fs-md-3 fs-lg-4 mb-3">Overall Detailed Results</h1>
-            <h4 class="fw-bold fs-6 mb-4">1. Tasks</h4>
-            <p>The task details the necessary step on the contract project completion either to get rid of the bug or provide security.</p>
-            <table class="table">
-              <tr>
-                <th>Task 1</th>
-                <td>Change the code to make it secure</td>
-              </tr>
-              <tr>
-                <th>Project Name </th>
-                <td>oneSystems</td>
-              </tr>
-              <tr>
-                <th>Assigned To </th>
-                <td>oneAudit</td>
-              </tr>
-              <tr>
-                <th>Line Number </th>
-                <td>100</td>
-              </tr>
-              <tr>
-                <th>Contract</th>
-                <td>Token.sol </td>
-              </tr>
-              <tr>
-                <th>Code</th>
-                <td></td>
-              </tr>
-              <tr>
-                <th>Description</th>
-                <td>Whether the contract name and its constructor are not identical to each other.</td>
-              </tr>
-              <tr>
-                <th>Severity</th>
-                <td>High</td>
-              </tr>
-              <tr>
-                <th>Assigned Datetime</th>
-                <td>23/01/2023 14:00</td>
-              </tr>
-              <tr>
-                <th>Complete By</th>
-                <td>23/01/2023 14:00</td>
-              </tr>
-              <tr>
-                <th>Status</th>
-                <td>Not Complete</td>
-              </tr>
-            </table>
-            <h4 class="fw-bold fs-6 mb-4">2. Issues</h4>
-            <p>A contract issue is any disagreement or problem that may arise during the formation or performance of the contract.</p>
-            <table class="table">
-              <tr>
-                <td>Issue 1</td>
-                <td>Timely Reward Update Upon totalEmissions Change</td>
-              </tr>
-              <tr>
-                <td>Project Name</td>
-                <td>oneSystems</td>
-              </tr>
-              <tr>
-                <td>Audit</td>
-                <td>oneAudit</td>
-              </tr>
-              <tr>
-                <td>Line Number</td>
-                <td>100</td>
-              </tr>
-              <tr>
-                <td>Contract</td>
-                <td>Token.sol</td>
-              </tr>
-              <tr>
-                <td>Code</td>
-                <td>Whether the contract name and its constructor are not identical to each other.</td>
-              </tr>
-              <tr>
-                <td>Description</td>
-                <td>Critical</td>
-              </tr>
-              <tr>
-                <td>Severity</td>
-                <td>Medium</td>
-              </tr>
-              <tr>
-                <td>Impact</td>
-                <td>The bco tokenomics are supported by a core VoteController contract, which controls the voting for supported markets as well as the issuance of additional rewards via Comptroller. While reviewing the rewards-related logic, we notice the current implementation needs to be improved.</td>
-              </tr>
-              <tr>
-                <td>Reason</td>
-                <td>To elaborate, we show below the setTotalEmissions() function in VoteController. It implements a simplistic logic in allowing for setting the emission rate of the protocol token 0VIX. However, it does not immediately apply the new setting to the active markets. In other words, there is a need to invoke updateRewards() to adjust the dissemination speed via Comptroller.</td>
-              </tr>
-              <tr>
-                <td>Code</td>
-                <td><img src="image/cscr1.png" alt="" class="img-fluid"></td>
-              </tr>
-              <tr>
-                <td>Recommendation</td>
-                <td>Revise the above setTotalEmissions() function to timely apply the new emissions setting.</td>
-              </tr>
-              <tr>
-                <td>Status</td>
-                <td><p>The issue has been confirmed. And the team clarifies that "Since the current reward speeds are voted by the users, we don't want to update the rewards immediately after setting a new total emissions amount. The new amount of total emissions could have an impact on the users' vote behaviour and that's why we are updating the reward speeds only after voting in a periodic manner."</p><p>The issue will be fixed in the following commit: 82079c9. </p></td>
-              </tr>
-            </table>
-            <p>The detailed report of all above and other errors/notes can be found at this <a href="#">link</a>.</p>
-            <h4 class="fw-bold fs-6 mb-4">3. Checks</h4>
-            <table class="table">
-              <tr>
-                <td>Type 1</td>
-                <td>Basic coding bugs</td>
-              </tr>
-              <tr>
-                <td>Auditor</td>
-                <td>oneAudit</td>
-              </tr>
-              <tr>
-                <td>Line Number</td>
-                <td>100</td>
-              </tr>
-              <tr>
-                <td>Contract</td>
-                <td>Token.sol</td>
-              </tr>
-              <tr>
-                <td>Code</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Description</td>
-                <td>Whether the contract name and its constructor are not identical to each other.</td>
-              </tr>
-              <tr>
-                <td>Severity</td>
-                <td>Low</td>
-              </tr>
-              <tr>
-                <td>Result</td>
-                <td>Not found</td>
-              </tr>
-            </table>
-            <p> The detailed report of all above and other errors/notes can be found at this <a href="#">link</a>.</p>
-            <h4 class="fw-bold fs-6 mb-4">4. Notes</h4>
-            <p>Note is a brief written announcement given by an audit or user for the code line in contract.</p>
-            <table class="table">
-              <tr>
-                <td>Notes 1</td>
-                <td>Check the code for security purpose</td>
-              </tr>
-              <tr>
-                <td>Project Name</td>
-                <td>oneSystems</td>
-              </tr>
-              <tr>
-                <td>Created By</td>
-                <td>oneAudit</td>
-              </tr>
-              <tr>
-                <td>Contract</td>
-                <td>Token.sol</td>
-              </tr>
-              <tr>
-                <td>Line Number</td>
-                <td>100</td>
-              </tr>
-              <tr>
-                <td>Code</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Severity</td>
-                <td>Low</td>
-              </tr>
-            </table>
-            <p>The detailed report of all above and other errors/notes can be found at this <a href="">link</a>.</p>
-            <h4 class="fw-bold fs-6 mb-4">5. Estimates</h4>          
-            <p>The estimates is a process of forecasting the time and resources needed to deliver a project</p>
-            <table class="table">
-              <thead>
-                <tr>
-                  <th>SI</th>
-                  <th>Name</th>
-                  <th>Category</th>
-                  <th>Project Name</th>
-                  <th>Start Date</th>
-                  <th>End Date</th>
-                  <th>Points</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>Change code</td>
-                  <td>oneCategory</td>
-                  <td>oneSystems</td>
-                  <td>14-04-2023</td>
-                  <td>14-04-2023</td>
-                  <td>10</td>                
-                </tr>
-              </tbody>
-              <tfoot>
-                <tr>
-                  <th colspan="6" class="text-end">Total Points</th>
-                  <th>10</th>
-                </tr>
-              </tfoot>
-            </table>
-            <h4 class="fw-bold fs-6 mb-4">6. Project Decisions</h4>
-            <table class="table">
-              <thead>
-                <tr>
-                  <th>SI</th>
-                  <th>Project</th>
-                  <th>Contract</th>
-                  <th>Decisions</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>Change code</td>
-                  <td>oneCategory</td>
-                  <td>oneSystems</td>
-                </tr>
-              </tbody>
-            </table>
-            <h4 class="fw-bold fs-6 mb-4">7. Tool Results </h4>
-            <p>The details has the result obtained by running the tool profile that has list of tools assigned.</p>
-            <ul>
-              <li>
-                <h4>MythX (2 “level low” issues detected)</h4>
-                <img src="image/MythX.png" alt="" class="img-fluid">
-                <p>We have made a deep scan (very sensitive), 90 minutes of duration:</p>
-              </li>
-              <li>
-                <h4>Slither</h4>
-                <p>Slither is a Solidity static analysis framework which runs a suite of vulnerability detectors, prints visual information about contract details, and provides an API to write custom analyses quickly. Slither enables developers to find vulnerabilities, enhance their code comprehension, and promptly prototype custom analyses. Each solidity file and project together has been analysed. We got a report with a few warnings and errors.</p>
-                <p>We did the analysis of the project altogether. Below are the results.</p>
-                <img src="image/Slither.png" alt="" class="img-fluid">
-                <img src="image/Slither2.png" alt="" class="img-fluid">
-                <p>While analysis with the slither there was some error/warnings/message from the tool on these files.</p>
-              </li>
-            </ul>
+            <h1 class="fw-bold fs-2 fs-md-3 fs-lg-4 mb-3">Overall Detailed Results</h1>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    1. Tasks
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <p>The task details the necessary step on the contract project completion either to get rid of the bug or provide security.</p>
+                    <table class="table mb-5">
+                      <tr>
+                        <th>Task 1</th>
+                        <td>Change the code to make it secure</td>
+                      </tr>
+                      <tr>
+                        <th>Project Name </th>
+                        <td>oneSystems</td>
+                      </tr>
+                      <tr>
+                        <th>Assigned To </th>
+                        <td>oneAudit</td>
+                      </tr>
+                      <tr>
+                        <th>Line Number </th>
+                        <td>100</td>
+                      </tr>
+                      <tr>
+                        <th>Contract</th>
+                        <td>Token.sol </td>
+                      </tr>
+                      <tr>
+                        <th>Code</th>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th>Description</th>
+                        <td>Whether the contract name and its constructor are not identical to each other.</td>
+                      </tr>
+                      <tr>
+                        <th>Severity</th>
+                        <td>High</td>
+                      </tr>
+                      <tr>
+                        <th>Assigned Datetime</th>
+                        <td>23/01/2023 14:00</td>
+                      </tr>
+                      <tr>
+                        <th>Complete By</th>
+                        <td>23/01/2023 14:00</td>
+                      </tr>
+                      <tr>
+                        <th>Status</th>
+                        <td>Not Complete</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    2. Issues
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <p>A contract issue is any disagreement or problem that may arise during the formation or performance of the contract.</p>
+                    <table class="table mb-5">
+                      <tr>
+                        <td>Issue 1</td>
+                        <td>Timely Reward Update Upon totalEmissions Change</td>
+                      </tr>
+                      <tr>
+                        <td>Project Name</td>
+                        <td>oneSystems</td>
+                      </tr>
+                      <tr>
+                        <td>Audit</td>
+                        <td>oneAudit</td>
+                      </tr>
+                      <tr>
+                        <td>Line Number</td>
+                        <td>100</td>
+                      </tr>
+                      <tr>
+                        <td>Contract</td>
+                        <td>Token.sol</td>
+                      </tr>
+                      <tr>
+                        <td>Code</td>
+                        <td>Whether the contract name and its constructor are not identical to each other.</td>
+                      </tr>
+                      <tr>
+                        <td>Description</td>
+                        <td>Critical</td>
+                      </tr>
+                      <tr>
+                        <td>Severity</td>
+                        <td>Medium</td>
+                      </tr>
+                      <tr>
+                        <td>Impact</td>
+                        <td>The bco tokenomics are supported by a core VoteController contract, which controls the voting for supported markets as well as the issuance of additional rewards via Comptroller. While reviewing the rewards-related logic, we notice the current implementation needs to be improved.</td>
+                      </tr>
+                      <tr>
+                        <td>Reason</td>
+                        <td>To elaborate, we show below the setTotalEmissions() function in VoteController. It implements a simplistic logic in allowing for setting the emission rate of the protocol token 0VIX. However, it does not immediately apply the new setting to the active markets. In other words, there is a need to invoke updateRewards() to adjust the dissemination speed via Comptroller.</td>
+                      </tr>
+                      <tr>
+                        <td>Code</td>
+                        <td><img src="image/cscr1.png" alt="" class="img-fluid"></td>
+                      </tr>
+                      <tr>
+                        <td>Recommendation</td>
+                        <td>Revise the above setTotalEmissions() function to timely apply the new emissions setting.</td>
+                      </tr>
+                      <tr>
+                        <td>Status</td>
+                        <td><p>The issue has been confirmed. And the team clarifies that "Since the current reward speeds are voted by the users, we don't want to update the rewards immediately after setting a new total emissions amount. The new amount of total emissions could have an impact on the users' vote behaviour and that's why we are updating the reward speeds only after voting in a periodic manner."</p><p>The issue will be fixed in the following commit: 82079c9. </p></td>
+                      </tr>
+                    </table>
+                    <p>The detailed report of all above and other errors/notes can be found at this <a href="#">link</a>.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    3. Checks
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <table class="table mb-5">
+                      <tr>
+                        <td>Type 1</td>
+                        <td>Basic coding bugs</td>
+                      </tr>
+                      <tr>
+                        <td>Auditor</td>
+                        <td>oneAudit</td>
+                      </tr>
+                      <tr>
+                        <td>Line Number</td>
+                        <td>100</td>
+                      </tr>
+                      <tr>
+                        <td>Contract</td>
+                        <td>Token.sol</td>
+                      </tr>
+                      <tr>
+                        <td>Code</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Description</td>
+                        <td>Whether the contract name and its constructor are not identical to each other.</td>
+                      </tr>
+                      <tr>
+                        <td>Severity</td>
+                        <td>Low</td>
+                      </tr>
+                      <tr>
+                        <td>Result</td>
+                        <td>Not found</td>
+                      </tr>
+                    </table>
+                    <p> The detailed report of all above and other errors/notes can be found at this <a href="#">link</a>.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    4. Notes
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <p>Note is a brief written announcement given by an audit or user for the code line in contract.</p>
+                    <table class="table mb-5">
+                      <tr>
+                        <td>Notes 1</td>
+                        <td>Check the code for security purpose</td>
+                      </tr>
+                      <tr>
+                        <td>Project Name</td>
+                        <td>oneSystems</td>
+                      </tr>
+                      <tr>
+                        <td>Created By</td>
+                        <td>oneAudit</td>
+                      </tr>
+                      <tr>
+                        <td>Contract</td>
+                        <td>Token.sol</td>
+                      </tr>
+                      <tr>
+                        <td>Line Number</td>
+                        <td>100</td>
+                      </tr>
+                      <tr>
+                        <td>Code</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Severity</td>
+                        <td>Low</td>
+                      </tr>
+                    </table>
+                    <p>The detailed report of all above and other errors/notes can be found at this <a href="">link</a>.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                    5. Estimates
+                  </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <p>The estimates is a process of forecasting the time and resources needed to deliver a project</p>
+                    <table class="table mb-5">
+                      <thead>
+                        <tr>
+                          <th>SI</th>
+                          <th>Name</th>
+                          <th>Category</th>
+                          <th>Project Name</th>
+                          <th>Start Date</th>
+                          <th>End Date</th>
+                          <th>Points</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Change code</td>
+                          <td>oneCategory</td>
+                          <td>oneSystems</td>
+                          <td>14-04-2023</td>
+                          <td>14-04-2023</td>
+                          <td>10</td>                
+                        </tr>
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                          <th colspan="6" class="text-end">Total Points</th>
+                          <th>10</th>
+                        </tr>
+                      </tfoot>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                    6. Project Decisions
+                  </button>
+                </h2>
+                <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <table class="table mb-5">
+                      <thead>
+                        <tr>
+                          <th>SI</th>
+                          <th>Project</th>
+                          <th>Contract</th>
+                          <th>Decisions</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Change code</td>
+                          <td>oneCategory</td>
+                          <td>oneSystems</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                    7. Tool Results
+                  </button>
+                </h2>
+                <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <p>The details has the result obtained by running the tool profile that has list of tools assigned.</p>
+                    <ul>
+                      <li>
+                        <h4 class="fw-bold fs-6 mb-4">MythX (2 “level low” issues detected)</h4>
+                        <img src="image/MythX.png" alt="" class="img-fluid">
+                        <p>We have made a deep scan (very sensitive), 90 minutes of duration:</p>
+                      </li>
+                      <li>
+                        <h4 class="fw-bold fs-6 mb-4">Slither</h4>
+                        <p>Slither is a Solidity static analysis framework which runs a suite of vulnerability detectors, prints visual information about contract details, and provides an API to write custom analyses quickly. Slither enables developers to find vulnerabilities, enhance their code comprehension, and promptly prototype custom analyses. Each solidity file and project together has been analysed. We got a report with a few warnings and errors.</p>
+                        <p>We did the analysis of the project altogether. Below are the results.</p>
+                        <img src="image/Slither.png" alt="" class="img-fluid">
+                        <img src="image/Slither2.png" alt="" class="img-fluid">
+                        <p>While analysis with the slither there was some error/warnings/message from the tool on these files.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>            
           </div>
         </section>
         <section class="">
