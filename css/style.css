@@ -154,7 +154,7 @@ Menu
 .sidebar #menu li.active> a, .sidebar #menu li> a:hover {
   color: #2470dc;
 }
-.sidebar  #menu>li>a>.icon-arrow:after{
+.sidebar  #menu li a .icon-arrow:after{
   position: absolute;
   font-family: 'simple-line-icons';
   content: "\e606";
@@ -162,7 +162,7 @@ Menu
   top: 16px;
   font-size: 12px;
 }
-.sidebar  #menu>li.active>a>.icon-arrow:after{
+.sidebar  #menu li.active a .icon-arrow:after{
   transform: rotate(90deg);
 }
 .sidebar  #menu>li ul{
@@ -171,6 +171,7 @@ Menu
   margin: 0;
 }
 .sidebar  #menu>li ul li a{
+  position: relative;
   display: block;
   padding: 5px;
   padding-left: 30px;
