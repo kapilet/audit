@@ -149,28 +149,71 @@ body {
   background: url(../image/square-grid.png) repeat;
 }
 /*
+Metis Menu
+*/
+:where(html) {
+  --mm-transition-timing-function: ease;
+  --mm-trantisition-duration: 0.35s;
+}
+.metismenu .mm-collapse:not(.mm-show) {
+  display: none;
+}
+
+.metismenu .mm-collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  transition: height var(--mm-trantisition-duration) var(--mm-transition-timing-function);
+}
+
+.metismenu .has-arrow {
+  position: relative;
+}
+
+.metismenu .has-arrow::after {
+  position: absolute;
+  content: "";
+  width: 0.5em;
+  height: 0.5em;
+  border-width: 0 0 1px 1px;
+  border-style: solid;
+  border-color: initial;
+  inset-inline-end: 1em;
+  transform: rotate(45deg) translate(0, -50%);
+  transform-origin: top;
+  top: 50%;
+  transition: transform var(--mm-trantisition-duration) var(--mm-transition-timing-function);
+  right: 10px;
+}
+
+*[dir=rtl] .metismenu .has-arrow::after {
+  transform: rotate(-135deg) translate(0, -50%);
+}
+
+.metismenu .mm-active > .has-arrow::after,
+.metismenu .has-arrow[aria-expanded=true]::after {
+  transform: rotate(-45deg) translate(0, -50%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .metismenu .mm-collapsing,
+  .metismenu .has-arrow::after {
+    transition-duration: 0.000000001s;
+  }
+}
+/*
 Menu
 */
-.sidebar #menu li.active> a, .sidebar #menu li> a:hover {
+.metismenu li.mm-active> a, .metismenu li> a:hover {
   color: #2470dc;
 }
-.sidebar  #menu li a .icon-arrow:after{
-  position: absolute;
-  font-family: 'simple-line-icons';
-  content: "\e606";
-  right: 5px;
-  top: 16px;
-  font-size: 12px;
-}
-.sidebar  #menu li.active a .icon-arrow:after{
-  transform: rotate(90deg);
-}
-.sidebar  #menu>li ul{
+.metismenu>li ul{
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.sidebar  #menu>li ul li a{
+.metismenu>li ul li a{
   position: relative;
   display: block;
   padding: 5px;
@@ -179,3 +222,4 @@ Menu
   color: #000000;
   font-size: 1rem;
 }
+.metismenu a.has-arrow{padding-right: 30px;}

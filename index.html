@@ -10,7 +10,8 @@
   <title>Contract Audit Report</title>
   <link rel="canonical" href="">
 
-  <link href="fonts/lineicons/css/simple-line-icons.css" rel="stylesheet">
+  <link href="fonts/lineicons/css/simple-line-icons.css" rel="stylesheet"><!-- 
+  <link href="css/metismenujs.css" rel="stylesheet"> -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
@@ -50,10 +51,9 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link has-arrow" href="#">
                 <span data-feather="file" class="align-text-bottom"></span>
                 Overview
-                <span class="icon-arrow"></span>
               </a>
               <ul>
                 <li><a href="#Overview">Background</a></li>
@@ -80,16 +80,15 @@
               </a>
             </li> -->
             <li class="nav-item">
-              <a class="nav-link" href="#Introduction">
+              <a class="nav-link has-arrow" href="#Introduction">
                 <span data-feather="file" class="align-text-bottom"></span>
                 Introduction
-                <span class="icon-arrow"></span>
               </a>
               <ul>
                 <li><a href="#Manual_audit">Manual audit</a></li>
                 <li><a href="#Automated_analysis">Automated analysis</a></li>
                 <li>
-                  <a href="#">Report <span class="icon-arrow"></span></a>
+                  <a href="#" class="has-arrow">Report</a>
                   <ul>
                     <li><a href="#Audit_details">Audit details</a></li>
                     <li><a href="#Audit_Goals">Audit Goals</a></li>
@@ -163,10 +162,9 @@
               </a>
             </li> -->
             <li class="nav-item">
-              <a class="nav-link" href="#Findings">
+              <a class="nav-link has-arrow" href="#Findings">
                 <span data-feather="file" class="align-text-bottom"></span>
                 Findings
-                <span class="icon-arrow"></span>
               </a>
               <ul>
                 <li><a href="#Summary">Summary</a></li>
@@ -179,10 +177,9 @@
               </a>
             </li> -->
             <li class="nav-item">
-              <a class="nav-link" href="#Overall_Detailed_Results">
+              <a class="nav-link has-arrow" href="#Overall_Detailed_Results">
                 <span data-feather="file" class="align-text-bottom"></span>
                 Overall Detailed Results
-                <span class="icon-arrow"></span>
               </a>
               <ul>
                 <li><a href="#Overall_Detailed_Results">Tasks</a></li>
@@ -192,7 +189,7 @@
                 <li><a href="#Overall_Detailed_Results">Estimates</a></li>
                 <li><a href="#Overall_Detailed_Results">Project Decisions</a></li>
                 <li>
-                  <a href="#">Tool Results<span class="icon-arrow"></span></a>
+                  <a href="#" class="has-arrow">Tool Results</a>
                   <ul>
                     <li><a href="#MythX">MythX (2 “level low” issues detected)</a></li>
                     <li><a href="#Slither">Slither</a></li>
@@ -437,7 +434,8 @@
               <li>Manual Security Testing (SWC-Registry, Overflow)</li>
               <li>Running the tests and checking their coverage.</li>
             </ul>
-            <h2 class="fw-bold fs-4 fs-md-3 fs-lg-4 mb-2">Report</h2>
+            <br>
+            <h1 class="fw-bold fs-2 fs-md-3 fs-lg-4 mb-3">Report</h1>
             <ul>
               <li>All the gathered information is described in this report.</li>
             </ul>
@@ -617,8 +615,8 @@
                 </tr>
               </tbody>
             </table>
-            <h2 class="fw-bold fs-4 fs-md-3 fs-lg-4 mb-2" id="Summary">Findings</h2>
-            <h4 class="fw-bold fs-6 mb-4">Summary</h4>
+            <h1 class="fw-bold fs-2 fs-md-3 fs-lg-4 mb-3" id="Summary">Findings</h1>
+            <h2 class="fw-bold fs-4 fs-md-3 fs-lg-4 mb-2">Summary</h2>
             <p>Here is a summary of our findings after analyzing the blockchainone Smart Contract Review.</p>
             <p>During the first phase of our audit, we studied the smart contract source code and ran code analyzer through specific tools. The purpose here is to statically identify known coding bugs, and then manually verify (reject or confirm) issues reported by tool. We further manually review business logics, examine system operations, and place token management aspects under scrutiny to uncover possible pitfalls and/or bugs.</p>
             <p>The details on the total number of issues with color coding:</p>
@@ -1053,17 +1051,17 @@
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/metisMenu.min.js"></script> 
+  <script src="js/metismenujs.min.js"></script> 
   <script>
-      $(function () {
+      /* $(function () {
 
           $('#menu').metisMenu();
 
           $('#menu2').metisMenu({
               toggle: false
           });
-      });
-
+      }); */
+      new MetisMenu("#menu");
       (function($) {
         "use strict"; // Start of use strict
 
