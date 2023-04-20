@@ -545,7 +545,7 @@
             </table>
             <h2 class="fw-bold fs-4 fs-md-3 fs-lg-4 mb-2" id="Issue_check_list">Issue check list</h2>
             <p>The Full List of Check Items:</p>
-            <table class="table mb-5">
+            <table class="table table-bordered mb-5">
               <thead>
                 <tr>
                   <th>Category</th>
@@ -630,22 +630,22 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>Critical</td>
+                  <td class="text-danger">Critical</td>
                   <td>0</td>
                   <td></td>
                 </tr>
                 <tr>
-                  <td>High</td>
+                  <td class="text-warning">High</td>
                   <td>0</td>
                   <td></td>
                 </tr>
                 <tr>
-                  <td>Medium</td>
+                  <td class="text-primary">Medium</td>
                   <td>0</td>
                   <td></td>
                 </tr>
                 <tr>
-                  <td>Low</td>
+                  <td class="text-success">Low</td>
                   <td>3</td>
                   <td></td>
                 </tr>
@@ -708,7 +708,7 @@
                       </tr>
                       <tr>
                         <th>Severity</th>
-                        <td>High</td>
+                        <td class="text-warning">High</td>
                       </tr>
                       <tr>
                         <th>Assigned Datetime</th>
@@ -737,55 +737,55 @@
                     <p>A contract issue is any disagreement or problem that may arise during the formation or performance of the contract.</p>
                     <table class="table mb-5">
                       <tr>
-                        <td>Issue 1</td>
+                        <th>Issue 1</th>
                         <td>Timely Reward Update Upon totalEmissions Change</td>
                       </tr>
                       <tr>
-                        <td>Project Name</td>
+                        <th>Project Name</th>
                         <td>oneSystems</td>
                       </tr>
                       <tr>
-                        <td>Audit</td>
+                        <th>Audit</th>
                         <td>oneAudit</td>
                       </tr>
                       <tr>
-                        <td>Line Number</td>
+                        <th>Line Number</th>
                         <td>100</td>
                       </tr>
                       <tr>
-                        <td>Contract</td>
+                        <th>Contract</th>
                         <td>Token.sol</td>
                       </tr>
                       <tr>
-                        <td>Code</td>
+                        <th>Code</th>
                         <td>Whether the contract name and its constructor are not identical to each other.</td>
                       </tr>
                       <tr>
-                        <td>Description</td>
-                        <td>Critical</td>
+                        <th>Description</th>
+                        <td class="text-danger">Critical</td>
                       </tr>
                       <tr>
-                        <td>Severity</td>
-                        <td>Medium</td>
+                        <th>Severity</th>
+                        <td class="text-primary">Medium</td>
                       </tr>
                       <tr>
-                        <td>Impact</td>
+                        <th>Impact</th>
                         <td>The bco tokenomics are supported by a core VoteController contract, which controls the voting for supported markets as well as the issuance of additional rewards via Comptroller. While reviewing the rewards-related logic, we notice the current implementation needs to be improved.</td>
                       </tr>
                       <tr>
-                        <td>Reason</td>
+                        <th>Reason</th>
                         <td>To elaborate, we show below the setTotalEmissions() function in VoteController. It implements a simplistic logic in allowing for setting the emission rate of the protocol token 0VIX. However, it does not immediately apply the new setting to the active markets. In other words, there is a need to invoke updateRewards() to adjust the dissemination speed via Comptroller.</td>
                       </tr>
                       <tr>
-                        <td>Code</td>
+                        <th>Code</th>
                         <td><img src="image/cscr1.png" alt="" class="img-fluid"></td>
                       </tr>
                       <tr>
-                        <td>Recommendation</td>
+                        <th>Recommendation</th>
                         <td>Revise the above setTotalEmissions() function to timely apply the new emissions setting.</td>
                       </tr>
                       <tr>
-                        <td>Status</td>
+                        <th>Status</th>
                         <td><p>The issue has been confirmed. And the team clarifies that "Since the current reward speeds are voted by the users, we don't want to update the rewards immediately after setting a new total emissions amount. The new amount of total emissions could have an impact on the users' vote behaviour and that's why we are updating the reward speeds only after voting in a periodic manner."</p><p>The issue will be fixed in the following commit: 82079c9. </p></td>
                       </tr>
                     </table>
@@ -803,35 +803,35 @@
                   <div class="accordion-body">
                     <table class="table mb-5">
                       <tr>
-                        <td>Type 1</td>
+                        <th>Type 1</th>
                         <td>Basic coding bugs</td>
                       </tr>
                       <tr>
-                        <td>Auditor</td>
+                        <th>Auditor</th>
                         <td>oneAudit</td>
                       </tr>
                       <tr>
-                        <td>Line Number</td>
+                        <th>Line Number</th>
                         <td>100</td>
                       </tr>
                       <tr>
-                        <td>Contract</td>
+                        <th>Contract</th>
                         <td>Token.sol</td>
                       </tr>
                       <tr>
-                        <td>Code</td>
+                        <th>Code</th>
                         <td></td>
                       </tr>
                       <tr>
-                        <td>Description</td>
+                        <th>Description</th>
                         <td>Whether the contract name and its constructor are not identical to each other.</td>
                       </tr>
                       <tr>
-                        <td>Severity</td>
-                        <td>Low</td>
+                        <th>Severity</th>
+                        <td class="text-success">Low</td>
                       </tr>
                       <tr>
-                        <td>Result</td>
+                        <th>Result</th>
                         <td>Not found</td>
                       </tr>
                     </table>
@@ -850,32 +850,32 @@
                     <p>Note is a brief written announcement given by an audit or user for the code line in contract.</p>
                     <table class="table mb-5">
                       <tr>
-                        <td>Notes 1</td>
+                        <th>Notes 1</th>
                         <td>Check the code for security purpose</td>
                       </tr>
                       <tr>
-                        <td>Project Name</td>
+                        <th>Project Name</th>
                         <td>oneSystems</td>
                       </tr>
                       <tr>
-                        <td>Created By</td>
+                        <th>Created By</th>
                         <td>oneAudit</td>
                       </tr>
                       <tr>
-                        <td>Contract</td>
+                        <th>Contract</th>
                         <td>Token.sol</td>
                       </tr>
                       <tr>
-                        <td>Line Number</td>
+                        <th>Line Number</th>
                         <td>100</td>
                       </tr>
                       <tr>
-                        <td>Code</td>
+                        <th>Code</th>
                         <td></td>
                       </tr>
                       <tr>
-                        <td>Severity</td>
-                        <td>Low</td>
+                        <th>Severity</th>
+                        <td class="text-success">Low</td>
                       </tr>
                     </table>
                     <p>The detailed report of all above and other errors/notes can be found at this <a href="">link</a>.</p>
